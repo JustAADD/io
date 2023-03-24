@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-primary: "Montserrat", sans-serif;
+  --font-secondary: "Poppins", sans-serif;
+}
+
+:root {
+  --color-default: #222222;
+  --color-primary: #008374;
+  --color-secondary: #f85a40;
+  --color-third: #000000;
+  --color-fourth: #ff0000;
+  --color-fifth: #f1ede8;
+  --color-six: #e8ae97;
+  --color-seven: #755b33;
+}
+
+/*call variable using this syntax*/
+/*color: var(--color-primary);
+   font-family: var(--font-secondary);*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-primary);
+}
+
+/*--------------------------------------------------------------
+# navbar
+--------------------------------------------------------------*/
+body {
+  background-color: var(--color-default);
+}
+
+.navbar {
+  padding: 2%;
+  transition: 0.3s;
+}
+
+.navbar-brand {
+  margin-left: 15%;
+}
+
+.navbar-nav {
+  margin-right: 15%;
+  text-indent: 25px;
+}
+
+.navbar-toggler {
+  margin-right: 15%;
+}
+
+
+.collapse ul li a {
+  text-align: center;
+
+}
+
+@media screen and (max-width: 768px) {
+  [data-aos-delay] {
+    transition-delay: 0 !important;
+  }
+}
+
+@media (max-width: 900px) {
+
+  .navbar {
+
+
+    width: 100%;
+    padding: 20px;
+    transition: 0.3s;
+
+  }
+
+  .collapse {}
+
+  .collapse ul {
+    padding: 10%;
+  }
+
+  .collapse ul li a {
+    text-align: center;
+    padding: 15px;
+
+  }
+
+
+}
+
+
+
+/*--------------------------------------------------------------
+# Disable aos animation delay on mobile devices
+--------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+  [data-aos-delay] {
+    transition-delay: 0 !important;
+  }
+}
